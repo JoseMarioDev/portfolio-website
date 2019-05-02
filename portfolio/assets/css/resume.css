@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  max-height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+  font-size: 1.6rem;
+}
+.banner {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  padding: 1.5rem;
+}
+i {
+  font-size: 2rem;
+  margin: 2rem 2rem;
+}
+ul {
+  margin: 2rem 2rem;
+}
+li {
+  padding: 1rem;
+  text-transform: capitalize;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 500;
+}
+@media (max-width: 850px) {
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+img {
+  max-width: 60%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+hr {
+  border-top: 1px solid #fdfdfd;
+}
+.container {
+  display: flex;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+@media (max-width: 850px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+}
+#sidebar {
+  background: #363845;
+  color: #faf9f7;
+  max-width: 30%;
+}
+@media (max-width: 850px) {
+  #sidebar {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  #sidebar .img-container {
+    display: none;
+  }
+  #sidebar .row {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 700px) {
+  #sidebar .row {
+    display: block;
+  }
+  #sidebar .content-box {
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+}
+#sidebar .img-container,
+#sidebar .intro-img-container {
+  max-width: 100%;
+}
+#sidebar .content-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact-info .content-banner {
+  background: #04728a;
+}
+.languages .languages-banner {
+  background: #aa053d;
+}
+.skills .skills-banner {
+  background: #d76b05;
+}
+#main {
+  padding: 2rem 4rem;
+  background: #faf9f7;
+}
+#main .intro-img-container {
+  display: none;
+}
+@media (max-width: 850px) {
+  #main .intro-img-container {
+    display: block;
+  }
+}
+#main .intro-img-container img {
+  max-width: 50%;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #363845;
+  padding: 0.5rem 1rem;
+}
+nav a:hover {
+  background: #363845;
+  color: #faf9f7;
+}
+.intro p,
+.section-entry {
+  margin-bottom: 2rem;
+}
+.education,
+.work-history {
+  margin-bottom: 4rem;
+}
